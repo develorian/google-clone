@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <a href="https://mail.google.com">Gmail</a>
-        <a href="https://mail.google.com/imghp">Imagenes</a>
+<body class="flex flex-col min-h-screen items-center justify-center bg-gray-200">
+    <header class="absolute top-4 right-4 space-x-3 text-sm text-gray-700">
+        <a href="https://mail.google.com" class="hover:undeline ">Gmail</a>
+        <a href="https://mail.google.com/imghp" class="hover:underline">Imagenes</a>
     </header>
-    <main>
-        <h1>Google</h1>
+    <main class="flex flex-col items-center">
+        <h1 class="text-6xl text-blue-600 font-bold mb-8">Google</h1>
         <form action="" id="search-form">
-            <input type="text" name="" id="search-input" placeholder="Buscar en Google">
-            <button type="submit">Buscar</button>
+            <input type="text" name="" id="search-input" placeholder="Buscar en Google" class="border border-gray-400 rounded-lg px-4 py-1 w-70">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-1  rounded-lg">Buscar</button>
         </form>
     </main>
     <script src="script.js"></script>
